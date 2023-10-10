@@ -12,6 +12,7 @@ IP="${IP}:${PORT}"
 
 /snap/bin/flasktemp "$IP" "$TIME" &
 P1=$!
-/snap/bin/psutil-process-monitoring-snap && fg
-P2=$!
-wait $P1 $P2
+#/snap/bin/psutil-process-monitoring-snap && fg
+#P2=$!
+#wait $P1 $P2
+wait $PI
