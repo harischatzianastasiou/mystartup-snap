@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 # First, determine our rate by determining how often flask should refresh page
-TIME="$(snap get mystartup-snap sleep-time)"
+CITY="Lamia"
 IP="$(snap get mystartup-snap ip-address)"
 # Find IP and define port to open
 #IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
@@ -10,9 +10,6 @@ PORT=5000
 IP="${IP}:${PORT}"
 
 
-/snap/bin/flasktemp "$IP" "$TIME" &
+/snap/bin/flasktemp "$IP" "$CITY" &
 P1=$!
-#/snap/bin/psutil-process-monitoring-snap && fg
-#P2=$!
-#wait $P1 $P2
-wait $PI
+
