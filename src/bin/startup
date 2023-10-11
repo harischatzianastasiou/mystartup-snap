@@ -1,6 +1,5 @@
 #!/bin/sh -e
 
-# First, determine our rate by determining how often flask should refresh page
 CITY="Lamia"
 IP="$(snap get mystartup-snap ip-address)"
 # Find IP and define port to open
